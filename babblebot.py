@@ -1,9 +1,9 @@
 import discord
 
 import json
-f = open('keys.json')
-keys = json.load(f)
-f.close()
+with open("keys.json") as f:
+    keys = json.load(f)
+
 
 client = discord.Client()
 
